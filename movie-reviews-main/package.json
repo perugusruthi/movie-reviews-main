@@ -1,0 +1,37 @@
+{
+  "name": "movie-reviews",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html --out-dir build --no-source-maps --no-content-hash",
+    "deploy": "npm run build && firebase deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perugusruthi/movie-reviews.git"
+  },
+  "keywords": [],
+  "author": "Sruthi Perugu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/perugusruthi/movie-reviews/issues"
+  },
+  "homepage": "https://github.com/perugusruthi/movie-reviews#readme",
+  "dependencies": {
+    "contentful": "^7.10.0",
+    "history": "^4.10.1",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
+    "react-markdown": "^4.2.2",
+    "react-router-dom": "^5.1.2",
+    "stream": "^0.0.2"
+  },
+  "devDependencies": {
+    "less": "^3.10.3",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^1.18.2"
+  }
+}
